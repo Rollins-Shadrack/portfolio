@@ -1,0 +1,129 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+    background-color: black;
+    color: white;
+
+}
+.navbar .navbar-nav .nav-link::after{
+    content: " ";
+    display: block;
+    width:0 ;
+    height: 2px;
+    background: transparent;
+    transition: color 0.3s width 0.3s ease,background-color .3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    background: yellow;
+    color: purple;
+}
+.navbar .navbar-nav .navlink:hover{
+    color: purple;
+
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark-card{
+    color: black;
+}
+.dark-card-titles{
+    color: gold;
+}
+ nav{
+     background-color: black;
+     color: white;
+ }
+ .home{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/port5.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    text-align: center;
+     
+ }
+ .intro{
+     align-items: center;
+     justify-content: center;
+    display: flex;
+    color: white;
+    /* padding-top:400px ; */
+   
+}
+.typing{
+    margin-left: 10px;
+    position: relative;
+    color: gold; 
+}
+.typing::after{
+  content:"";
+  position:absolute;
+  right: -5px;
+  width: 1px;
+  height: 94%;
+  border-right: 2px solid gold;
+  animation: blink 0.5s infinite ease;
+
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.icon:hover{
+    font-size: 22px;
+}
+.mode{
+    color: purple;
+}
+.shake{
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(-5deg);
+        
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform:rotate(5deg);
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-6deg);
+    }
+    60%{
+        transform: rotate(4deg);
+    }
+    70%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+.shadow:hover{
+    box-shadow: 5px 4px 8px 10px rgb(51, 180, 231);
+}
